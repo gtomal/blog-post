@@ -14,11 +14,11 @@
 ActiveRecord::Schema.define(version: 20161008065338) do
 
   create_table "articles", force: :cascade do |t|
-    t.string   "name"
-    t.string   "details"
-    t.string   "author"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name",       limit: 255
+    t.string   "details",    limit: 255
+    t.string   "author",     limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
